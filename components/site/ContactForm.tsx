@@ -48,7 +48,7 @@ export default function ContactForm() {
       className="max-w-xl w-full mx-auto text-center"
     >
       <h2 className="mb-3 text-2xl font-semibold">
-        {isEnglish ? "Contact" : "Επικοινωνία"}
+        {isEnglish ? "Contact Aris" : "Επικοινωνία Άρης"}
       </h2>
       <p className="text-zinc-700 dark:text-zinc-300 mb-4">
         {isEnglish

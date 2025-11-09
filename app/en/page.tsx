@@ -107,102 +107,83 @@ export default function Home() {
           </section>
 
           {/* ABOUT + IMAGES */}
-          <section
-            id="about"
-            className="grid items-center gap-8 md:grid-cols-[minmax(0,1.4fr),minmax(0,1fr)]"
-          >
-            <div className="space-y-4">
-              <h2 className="text-2xl font-semibold">Aris Papadopoulos</h2>
-              <p className="text-zinc-700 dark:text-zinc-300">
-                Aris Papadopoulos has been a journalist with the Greek-American
-                daily newspaper <em>Ethnikos Kirikas</em> (The National Herald)
-                since 1991, first in New York and from 1996 in the Athens
-                bureau. From 2001 to 2015 he served as Managing Editor and head
-                of the Athens office. Over three decades he conducted numerous
-                interviews with American and Greek-American politicians, as well
-                as Greek political figures of all parties visiting New York, and
-                authored in-depth investigative features on topics such as AIDS,
-                the missing of the Cyprus tragedy, the future of Greek diners,
-                and Modern Greek Studies in North America.
-              </p>
-              <p className="text-zinc-700 dark:text-zinc-300">
-                He has also worked extensively on culture, contributing long
-                feature inserts on major exhibitions of Greek antiquities at the
-                Metropolitan Museum of Art and the largest international
-                retrospective of Greek cinema at the Museum of Modern Art
-                (MoMA). He served as editor-in-chief of the Greek-American
-                magazine <em>Rizes</em>, was responsible for community news and
-                wrote the daily column “Eilikrina Hymeteros” (“Sincerely
-                Yours”). He has acted as an adviser on Greek issues to U.S.
-                Congresswoman Carolyn Maloney. He retired from <em>Ethnikos
-                Kirikas</em> in 2024 and continues to collaborate with the
-                newspaper part time. <em>A Few Oranges for Sissy</em> is his
-                first novel to be published in both Greek and English.
-              </p>
+        <section
+        id="about"
+        className="grid items-center gap-12 md:grid-cols-[minmax(0,1.4fr),minmax(0,1fr)]"
+        >
+        {/* Text */}
+        <div className="space-y-6 leading-relaxed">
+            <h2 className="text-2xl font-semibold">Aris Papadopoulos</h2>
 
-              {/* 3 wider images */}
-              <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-3">
-                <a
-                  href="/aris/headshots/hero-1.jpg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="relative aspect-[4/3] overflow-hidden rounded-xl"
-                >
-                  <Image
-                    src="/aris/headshots/hero-1.jpg"
-                    alt="Aris Papadopoulos"
-                    fill
-                    className="object-cover"
-                  />
-                </a>
-                <a
-                  href="/aris/headshots/hero-3.jpg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="relative aspect-[4/3] overflow-hidden rounded-xl"
-                >
-                  <Image
-                    src="/aris/headshots/hero-3.jpg"
-                    alt="Aris Papadopoulos"
-                    fill
-                    className="object-cover"
-                  />
-                </a>
-                <a
-                  href="/aris/headshots/hero-4.jpg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="relative aspect-[4/3] overflow-hidden rounded-xl"
-                >
-                  <Image
-                    src="/aris/headshots/hero-4.jpg"
-                    alt="Aris Papadopoulos"
-                    fill
-                    className="object-cover"
-                  />
-                </a>
-              </div>
-            </div>
+            {/* Intro */}
+            <p className="text-zinc-700 dark:text-zinc-300">
+            Aris Papadopoulos is a Greek-American journalist and author whose career has
+            bridged New York and Athens for more than three decades, chronicling the Greek
+            diaspora and the intersections of culture, politics, and identity.
+            </p>
 
-            {/* main portrait */}
-            <div className="flex justify-center">
-              <a
-                href="/aris/headshots/hero-2.jpg"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block w-full max-w-sm"
-              >
-                <Image
-                  src="/aris/headshots/hero-2.jpg"
-                  alt="Aris Papadopoulos"
-                  width={800}
-                  height={1200}
-                  className="h-auto w-full rounded-2xl shadow object-contain bg-zinc-200"
-                  priority
-                />
-              </a>
+            {/* Journalistic Career */}
+            <h3 className="text-lg font-semibold mt-8">Journalistic Career</h3>
+            <p className="text-zinc-700 dark:text-zinc-3 00">
+            Since 1991 he has worked for the daily Greek-American newspaper
+            <span className="italic"> The National Herald (Εθνικός Κήρυξ)</span>,
+            first in New York and, from 1996, at the Athens Bureau, where he served as
+            Managing Editor and bureau lead (2001–2015). Over three decades he has interviewed
+            U.S., Greek-American, and Greek politicians, and authored in-depth features on topics
+            such as AIDS, the missing of the Cyprus tragedy, Greek diners, and Modern Greek Studies
+            in North America.
+            </p>
+
+            {/* Cultural Reporting */}
+            <h3 className="text-lg font-semibold">Cultural Reporting</h3>
+            <p className="text-zinc-700 dark:text-zinc-300">
+            He covered major exhibitions of Greek antiquities at the Metropolitan Museum of Art and
+            the largest retrospective of Greek cinema at MoMA. He served as editor-in-chief of
+            <span className="italic"> Rizes</span>, led community news, and wrote the daily column
+            <span className="italic"> “Eilikrina Ymeteros” (Sincerely Yours)</span>. He also advised
+            U.S. Congresswoman Carolyn Maloney on Greek affairs.
+            </p>
+
+            {/* Current Work */}
+            <h3 className="text-lg font-semibold">Now</h3>
+            <p className="text-zinc-700 dark:text-zinc-300">
+            He retired from <span className="italic">The National Herald</span> in 2024 and continues
+            to collaborate part-time. <span className="italic">A Few Oranges for Sissy</span> is his
+            debut novel, published in Greek and English.
+            </p>
+
+            {/* 3 images grid */}
+            <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
+            <a href="/aris/headshots/hero-1.jpg" target="_blank" rel="noopener noreferrer"
+                className="relative aspect-[4/3] overflow-hidden rounded-xl bg-zinc-200">
+                <Image src="/aris/headshots/hero-1.jpg" alt="Aris Papadopoulos" fill className="object-cover" />
+            </a>
+            <a href="/aris/headshots/hero-3.jpg" target="_blank" rel="noopener noreferrer"
+                className="relative aspect-[4/3] overflow-hidden rounded-xl bg-zinc-200">
+                <Image src="/aris/headshots/hero-3.jpg" alt="Aris Papadopoulos" fill className="object-cover" />
+            </a>
+            <a href="/aris/headshots/hero-4.jpg" target="_blank" rel="noopener noreferrer"
+                className="relative aspect-[4/3] overflow-hidden rounded-xl bg-zinc-200">
+                <Image src="/aris/headshots/hero-4.jpg" alt="Aris Papadopoulos" fill className="object-cover" />
+            </a>
             </div>
-          </section>
+        </div>
+
+        {/* Portrait */}
+        <div className="flex justify-center">
+            <a href="/aris/headshots/hero-2.jpg" target="_blank" rel="noopener noreferrer"
+            className="block w-full max-w-sm">
+            <Image
+                src="/aris/headshots/hero-2.jpg"
+                alt="Aris Papadopoulos"
+                width={800}
+                height={1200}
+                className="h-auto w-full rounded-2xl shadow object-cover bg-zinc-200"
+                priority
+            />
+            </a>
+        </div>
+        </section>
 
           {/* CONTACT */}
           <ContactForm />

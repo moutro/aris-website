@@ -111,102 +111,86 @@ export default function Home() {
 
           {/* ABOUT + IMAGES */}
           <section
-            id="about"
-            className="grid items-center gap-8 md:grid-cols-[minmax(0,1.4fr),minmax(0,1fr)]"
-          >
-            <div className="space-y-4">
-              <h2 className="text-2xl font-semibold">Άρης Παπαδόπουλος</h2>
-              <p className="text-zinc-700 dark:text-zinc-300">
-                Δημοσιογράφος της ημερήσιας ομογενειακής εφημερίδας «Εθνικός
-                Κήρυξ» (The National Herald) από το 1991, αρχικά στη Νέα Υόρκη
-                και από το 1996 στο Γραφείο Αθηνών, όπου από το 2001 έως το 2015
-                διετέλεσε Υπεύθυνος Ύλης και υπεύθυνος του γραφείου. Στη
-                διάρκεια των τριών δεκαετιών υπήρξε υπεύθυνος για συνεντεύξεις
-                με Αμερικανούς και Ελληνοαμερικανούς πολιτικούς, καθώς και με
-                Έλληνες πολιτικούς όλων των κομμάτων που επισκέπτονταν τη Νέα
-                Υόρκη, ενώ υπέγραψε εκτενείς έρευνες για θέματα όπως το AIDS,
-                οι αγνοούμενοι της κυπριακής τραγωδίας, το μέλλον των ελληνικών
-                εστιατορίων (diners) και οι νεοελληνικές σπουδές στη Βόρεια
-                Αμερική.
-              </p>
-              <p className="text-zinc-700 dark:text-zinc-300">
-                Ασχολήθηκε επίσης με το πολιτιστικό ρεπορτάζ, γράφοντας
-                πολυσέλιδα ένθετα για μεγάλες εκθέσεις ελληνικών αρχαιοτήτων στο
-                Μητροπολιτικό Μουσείο Νέας Υόρκης και για την μεγαλύτερη
-                διεθνώς αναδρομή του ελληνικού κινηματογράφου στο Μουσείο
-                Μοντέρνας Τέχνης (MoMA). Υπήρξε αρχισυντάκτης του ομογενειακού
-                περιοδικού «Ρίζες», υπεύθυνος ομογενειακών ειδήσεων και
-                συντάκτης του καθημερινού χρονογραφήματος «Ειλικρινά Υμέτερος»,
-                καθώς και σύμβουλος για ελληνικά θέματα της ομοσπονδιακής
-                βουλευτού Carolyn Maloney. Συνταξιοδοτήθηκε από τον «Εθνικό
-                Κήρυκα» το 2024 και συνεχίζει να συνεργάζεται με την εφημερίδα
-                σε part time βάση, ενώ το «Λίγα πορτοκάλια για τη Σίσσυ» είναι
-                το πρώτο του μυθιστόρημα που κυκλοφορεί στα ελληνικά και στα
-                αγγλικά.
-              </p>
+  id="about"
+  className="grid items-center gap-12 md:grid-cols-[minmax(0,1.4fr),minmax(0,1fr)]"
+>
+  {/* Text */}
+  <div className="space-y-6 leading-relaxed">
+    <h2 className="text-2xl font-semibold">Άρης Παπαδόπουλος</h2>
 
-              {/* 3 wider images */}
-              <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-3">
-                <a
-                  href="/aris/headshots/hero-1.jpg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="relative aspect-[4/3] overflow-hidden rounded-xl"
-                >
-                  <Image
-                    src="/aris/headshots/hero-1.jpg"
-                    alt="Άρης Παπαδόπουλος"
-                    fill
-                    className="object-cover"
-                  />
-                </a>
-                <a
-                  href="/aris/headshots/hero-3.jpg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="relative aspect-[4/3] overflow-hidden rounded-xl"
-                >
-                  <Image
-                    src="/aris/headshots/hero-3.jpg"
-                    alt="Άρης Παπαδόπουλος"
-                    fill
-                    className="object-cover"
-                  />
-                </a>
-                <a
-                  href="/aris/headshots/hero-4.jpg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="relative aspect-[4/3] overflow-hidden rounded-xl"
-                >
-                  <Image
-                    src="/aris/headshots/hero-4.jpg"
-                    alt="Άρης Παπαδόπουλος"
-                    fill
-                    className="object-cover"
-                  />
-                </a>
-              </div>
-            </div>
+    {/* Intro */}
+    <p className="text-zinc-700 dark:text-zinc-300">
+      Ο Άρης Παπαδόπουλος είναι ελληνοαμερικανός δημοσιογράφος και συγγραφέας.
+      Για περισσότερα από τριάντα χρόνια γεφυρώνει τη Νέα Υόρκη και την Αθήνα,
+      καταγράφοντας την εμπειρία της ομογένειας και τις τομές ανάμεσα στην
+      πολιτική, τον πολιτισμό και την ταυτότητα.
+    </p>
 
-            {/* main portrait */}
-            <div className="flex justify-center">
-              <a
-                href="/aris/headshots/hero-2.jpg"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block w-full max-w-sm"
-              >
-                <Image
-                  src="/aris/headshots/hero-2.jpg"
-                  alt="Άρης Παπαδόπουλος"
-                  width={800}
-                  height={1200}
-                  className="h-auto w-full rounded-2xl shadow object-contain bg-zinc-200"
-                  priority
-                />
-              </a>
-            </div>
+    {/* Journalistic Career */}
+    <h3 className="text-lg font-semibold mt-8">Δημοσιογραφική πορεία</h3>
+    <p className="text-zinc-700 dark:text-zinc-300">
+      Από το 1991 εργάζεται στην ημερήσια ομογενειακή εφημερίδα
+      <span className="italic"> «Εθνικός Κήρυξ» (The National Herald)</span>,
+      αρχικά στη Νέα Υόρκη και από το 1996 στο Γραφείο Αθηνών,
+      όπου διετέλεσε Υπεύθυνος Ύλης και υπεύθυνος του γραφείου (2001–2015).
+      Έχει πραγματοποιήσει συνεντεύξεις με αμερικανούς, ελληνοαμερικανούς και
+      έλληνες πολιτικούς και έχει υπογράψει εκτενείς έρευνες για ζητήματα όπως
+      το AIDS, οι αγνοούμενοι της κυπριακής τραγωδίας, τα ελληνικά diners
+      και οι νεοελληνικές σπουδές στη Βόρεια Αμερική.
+    </p>
+
+    {/* Cultural Reporting */}
+    <h3 className="text-lg font-semibold">Πολιτιστικό ρεπορτάζ</h3>
+    <p className="text-zinc-700 dark:text-zinc-300">
+      Κάλυψε σημαντικές εκθέσεις ελληνικών αρχαιοτήτων στο Μητροπολιτικό Μουσείο
+      Νέας Υόρκης και τη μεγαλύτερη διεθνώς αναδρομή του ελληνικού κινηματογράφου
+      στο MoMA. Υπήρξε αρχισυντάκτης του περιοδικού
+      <span className="italic"> «Ρίζες»</span>, υπεύθυνος ομογενειακών ειδήσεων
+      και συντάκτης του καθημερινού χρονογραφήματος
+      <span className="italic"> «Ειλικρινά Υμέτερος»</span>.
+      Συνεργάστηκε επίσης ως σύμβουλος για ελληνικά θέματα της βουλευτού Carolyn Maloney.
+    </p>
+
+    {/* Current Work */}
+    <h3 className="text-lg font-semibold">Σήμερα</h3>
+    <p className="text-zinc-700 dark:text-zinc-300">
+      Συνταξιοδοτήθηκε από τον «Εθνικό Κήρυκα» το 2024 και συνεχίζει να
+      συνεργάζεται με την εφημερίδα part-time. Το
+      <span className="italic"> «Λίγα πορτοκάλια για τη Σίσσυ»</span> είναι το
+      πρώτο του μυθιστόρημα, διαθέσιμο στα ελληνικά και στα αγγλικά.
+    </p>
+
+    {/* 3 images grid */}
+    <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
+      <a href="/aris/headshots/hero-1.jpg" target="_blank" rel="noopener noreferrer"
+         className="relative aspect-[4/3] overflow-hidden rounded-xl bg-zinc-200">
+        <Image src="/aris/headshots/hero-1.jpg" alt="Άρης Παπαδόπουλος" fill className="object-cover" />
+      </a>
+      <a href="/aris/headshots/hero-3.jpg" target="_blank" rel="noopener noreferrer"
+         className="relative aspect-[4/3] overflow-hidden rounded-xl bg-zinc-200">
+        <Image src="/aris/headshots/hero-3.jpg" alt="Άρης Παπαδόπουλος" fill className="object-cover" />
+      </a>
+      <a href="/aris/headshots/hero-4.jpg" target="_blank" rel="noopener noreferrer"
+         className="relative aspect-[4/3] overflow-hidden rounded-xl bg-zinc-200">
+        <Image src="/aris/headshots/hero-4.jpg" alt="Άρης Παπαδόπουλος" fill className="object-cover" />
+      </a>
+    </div>
+  </div>
+
+  {/* Portrait */}
+  <div className="flex justify-center">
+    <a href="/aris/headshots/hero-2.jpg" target="_blank" rel="noopener noreferrer"
+       className="block w-full max-w-sm">
+      <Image
+        src="/aris/headshots/hero-2.jpg"
+        alt="Άρης Παπαδόπουλος"
+        width={800}
+        height={1200}
+        className="h-auto w-full rounded-2xl shadow object-cover bg-zinc-200"
+        priority
+      />
+    </a>
+  </div>
           </section>
 
           {/* CONTACT */}
