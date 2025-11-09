@@ -8,7 +8,7 @@ import ContactForm from "@/components/site/ContactForm"
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col overflow-x-hidden bg-gradient-to-b from-zinc-50 to-zinc-100 dark:from-black dark:to-zinc-900">
+    <div className="min-h-screen flex flex-col bg-gradient-to-b from-zinc-50 to-zinc-100 dark:from-black dark:to-zinc-900">
       <Header />
 
       {/* HERO */}
@@ -26,36 +26,31 @@ export default function Home() {
           <div className="relative z-10 mx-auto flex h-full max-w-5xl items-center px-6">
             <div className="space-y-4 text-white">
               <p className="text-xs font-medium uppercase tracking-[0.3em] text-zinc-200">
-                Άρης Παπαδόπουλος
+                Aris Papadopoulos
               </p>
               <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight">
-                Λίγα πορτοκάλια για τη Σίσσυ
+                A Few Oranges for Sissy
               </h1>
               <p className="text-sm uppercase tracking-[0.2em] text-zinc-300">
-                Μυθιστόρημα
+                Novel
               </p>
               <p className="max-w-xl text-sm sm:text-base text-zinc-200">
-                Το επίσημο site του Άρη Παπαδόπουλου. Βρείτε πληροφορίες για το
-                μυθιστόρημα, βιογραφικό και στοιχεία επικοινωνίας.
+                The official site of author and journalist Aris Papadopoulos.
+                Learn more about the novel, the author&apos;s work, and how to
+                get in touch.
               </p>
               <div className="flex flex-wrap gap-3">
-  {/* Primary hero button – deep red */}
-  <Button
-    asChild
-    className="bg-[#7f1d1d] hover:bg-[#991b1b] cursor-pointer"
-  >
-    <Link href="#book">Περισσότερα για το βιβλίο</Link>
-  </Button>
-
-  {/* Secondary hero button – white with red hover text */}
-  <Button
-    variant="outline"
-    asChild
-    className="bg-white/90 text-black hover:bg-white hover:text-[#7f1d1d] cursor-pointer"
-  >
-    <Link href="#about">Για τον συγγραφέα</Link>
-  </Button>
-</div>
+                <Button asChild>
+                  <Link href="#book">About the book</Link>
+                </Button>
+                <Button
+                  variant="outline"
+                  asChild
+                  className="bg-white/90 text-black hover:bg-white"
+                >
+                  <Link href="#about">About the author</Link>
+                </Button>
+              </div>
             </div>
           </div>
         </section>
@@ -87,23 +82,25 @@ export default function Home() {
             <Card>
               <CardContent className="space-y-3 p-6">
                 <h2 className="text-2xl font-semibold">
-                  Λίγα πορτοκάλια για τη Σίσσυ
+                  A Few Oranges for Sissy
                 </h2>
                 <p className="text-sm uppercase tracking-wide text-zinc-500">
-                  A Few Oranges for Sissy
+                  Λίγα πορτοκάλια για τη Σίσσυ
                 </p>
                 <p className="text-zinc-700 dark:text-zinc-300">
-                  Μυθιστόρημα που ξεκινά με δύο φαντάρους να μεταφέρουν μια
-                  γυναίκα, μητέρα τεσσάρων παιδιών, στιγματισμένη ως
-                  «παλιοκομμουνίστρια». Μέσα από τη Σίσσυ και τα αδέλφια της
-                  παρακολουθούμε μια οικογένεια που πληρώνει το τίμημα του
-                  εμφυλίου, της μετανάστευσης και των μυστικών που τη βαραίνουν.
+                  The novel opens with two soldiers escorting a woman—mother of
+                  four—branded a “communist” and punished for choices that were
+                  never entirely her own. Through Sissy and her siblings, we
+                  follow a family that carries the weight of civil war,
+                  migration, and long–kept secrets.
                 </p>
                 <p className="text-zinc-700 dark:text-zinc-300">
-                  Το βιβλίο γράφτηκε αρχικά στα ελληνικά στα τέλη της δεκαετίας
-                  του ’80 στο Σικάγο, μπήκε για χρόνια «στο συρτάρι» και στη
-                  συνέχεια αναθεωρήθηκε, συντομεύτηκε και μεταφράστηκε στα
-                  αγγλικά.
+                  The book was first drafted in Greek in the late 1980s in
+                  Chicago, then set aside for years before being revised,
+                  tightened, and translated into English. It traces the
+                  emotional and political landscapes of Greek communities at
+                  home and abroad, and the ways the past continues to shape the
+                  present.
                 </p>
               </CardContent>
             </Card>
@@ -115,34 +112,32 @@ export default function Home() {
             className="grid items-center gap-8 md:grid-cols-[minmax(0,1.4fr),minmax(0,1fr)]"
           >
             <div className="space-y-4">
-              <h2 className="text-2xl font-semibold">Άρης Παπαδόπουλος</h2>
+              <h2 className="text-2xl font-semibold">Aris Papadopoulos</h2>
               <p className="text-zinc-700 dark:text-zinc-300">
-                Δημοσιογράφος της ημερήσιας ομογενειακής εφημερίδας «Εθνικός
-                Κήρυξ» (The National Herald) από το 1991, αρχικά στη Νέα Υόρκη
-                και από το 1996 στο Γραφείο Αθηνών, όπου από το 2001 έως το 2015
-                διετέλεσε Υπεύθυνος Ύλης και υπεύθυνος του γραφείου. Στη
-                διάρκεια των τριών δεκαετιών υπήρξε υπεύθυνος για συνεντεύξεις
-                με Αμερικανούς και Ελληνοαμερικανούς πολιτικούς, καθώς και με
-                Έλληνες πολιτικούς όλων των κομμάτων που επισκέπτονταν τη Νέα
-                Υόρκη, ενώ υπέγραψε εκτενείς έρευνες για θέματα όπως το AIDS,
-                οι αγνοούμενοι της κυπριακής τραγωδίας, το μέλλον των ελληνικών
-                εστιατορίων (diners) και οι νεοελληνικές σπουδές στη Βόρεια
-                Αμερική.
+                Aris Papadopoulos has been a journalist with the Greek-American
+                daily newspaper <em>Ethnikos Kirikas</em> (The National Herald)
+                since 1991, first in New York and from 1996 in the Athens
+                bureau. From 2001 to 2015 he served as Managing Editor and head
+                of the Athens office. Over three decades he conducted numerous
+                interviews with American and Greek-American politicians, as well
+                as Greek political figures of all parties visiting New York, and
+                authored in-depth investigative features on topics such as AIDS,
+                the missing of the Cyprus tragedy, the future of Greek diners,
+                and Modern Greek Studies in North America.
               </p>
               <p className="text-zinc-700 dark:text-zinc-300">
-                Ασχολήθηκε επίσης με το πολιτιστικό ρεπορτάζ, γράφοντας
-                πολυσέλιδα ένθετα για μεγάλες εκθέσεις ελληνικών αρχαιοτήτων στο
-                Μητροπολιτικό Μουσείο Νέας Υόρκης και για την μεγαλύτερη
-                διεθνώς αναδρομή του ελληνικού κινηματογράφου στο Μουσείο
-                Μοντέρνας Τέχνης (MoMA). Υπήρξε αρχισυντάκτης του ομογενειακού
-                περιοδικού «Ρίζες», υπεύθυνος ομογενειακών ειδήσεων και
-                συντάκτης του καθημερινού χρονογραφήματος «Ειλικρινά Υμέτερος»,
-                καθώς και σύμβουλος για ελληνικά θέματα της ομοσπονδιακής
-                βουλευτού Carolyn Maloney. Συνταξιοδοτήθηκε από τον «Εθνικό
-                Κήρυκα» το 2024 και συνεχίζει να συνεργάζεται με την εφημερίδα
-                σε part time βάση, ενώ το «Λίγα πορτοκάλια για τη Σίσσυ» είναι
-                το πρώτο του μυθιστόρημα που κυκλοφορεί στα ελληνικά και στα
-                αγγλικά.
+                He has also worked extensively on culture, contributing long
+                feature inserts on major exhibitions of Greek antiquities at the
+                Metropolitan Museum of Art and the largest international
+                retrospective of Greek cinema at the Museum of Modern Art
+                (MoMA). He served as editor-in-chief of the Greek-American
+                magazine <em>Rizes</em>, was responsible for community news and
+                wrote the daily column “Eilikrina Hymeteros” (“Sincerely
+                Yours”). He has acted as an adviser on Greek issues to U.S.
+                Congresswoman Carolyn Maloney. He retired from <em>Ethnikos
+                Kirikas</em> in 2024 and continues to collaborate with the
+                newspaper part time. <em>A Few Oranges for Sissy</em> is his
+                first novel to be published in both Greek and English.
               </p>
 
               {/* 3 wider images */}
@@ -155,7 +150,7 @@ export default function Home() {
                 >
                   <Image
                     src="/aris/headshots/hero-1.jpg"
-                    alt="Άρης Παπαδόπουλος"
+                    alt="Aris Papadopoulos"
                     fill
                     className="object-cover"
                   />
@@ -168,7 +163,7 @@ export default function Home() {
                 >
                   <Image
                     src="/aris/headshots/hero-3.jpg"
-                    alt="Άρης Παπαδόπουλος"
+                    alt="Aris Papadopoulos"
                     fill
                     className="object-cover"
                   />
@@ -181,7 +176,7 @@ export default function Home() {
                 >
                   <Image
                     src="/aris/headshots/hero-4.jpg"
-                    alt="Άρης Παπαδόπουλος"
+                    alt="Aris Papadopoulos"
                     fill
                     className="object-cover"
                   />
@@ -199,7 +194,7 @@ export default function Home() {
               >
                 <Image
                   src="/aris/headshots/hero-2.jpg"
-                  alt="Άρης Παπαδόπουλος"
+                  alt="Aris Papadopoulos"
                   width={800}
                   height={1200}
                   className="h-auto w-full rounded-2xl shadow object-contain bg-zinc-200"
