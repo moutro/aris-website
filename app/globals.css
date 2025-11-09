@@ -119,4 +119,16 @@
   body {
     @apply bg-background text-foreground;
   }
+
+    :root {
+      --brand-burgundy: #7a1631;
+      /* deep */
+      --brand-burgundy-hover: #9e2942;
+      /* subtle lift */
+    }
+  
+    .dark {
+      --brand-burgundy: #8f1b39;
+      --brand-burgundy-hover: #b22b4a;
+    }
 }
