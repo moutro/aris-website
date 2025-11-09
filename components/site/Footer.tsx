@@ -2,8 +2,8 @@ import { Facebook, Instagram, Twitter, Music2 } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer className="border-t bg-zinc-100/90 dark:bg-zinc-900/80">
-      <div className="flex flex-col gap-4 px-6 py-6 text-sm text-zinc-600 dark:text-zinc-300 sm:flex-row sm:items-center sm:justify-between">
+    <footer className="border-t bg-gradient-to-b from-zinc-100 to-zinc-200/70 dark:from-[#121012] dark:to-[#080607]/80 shadow-[0_-8px_24px_rgba(0,0,0,0.06)] dark:shadow-[0_-8px_24px_rgba(0,0,0,0.35)]">
+      <div className="flex flex-col gap-6 px-6 py-12 md:py-16 text-sm text-zinc-600 dark:text-zinc-300 sm:flex-row sm:items-center sm:justify-between">
         {/* Socials */}
         <div className="flex flex-wrap gap-4">
           {[
@@ -51,7 +51,6 @@ export default function Footer() {
           >
             Jason Bariamis
           </a>{" "}
-          · November 2025
         </div>
       </div>
     </footer>

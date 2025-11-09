@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import Header from "@/components/site/Header"
 import Footer from "@/components/site/Footer"
 import ContactForm from "@/components/site/ContactForm"
+import BackToTop from "@/components/site/BackToTop"
 
 export default function Home() {
   return (
@@ -197,7 +198,7 @@ export default function Home() {
           <ContactForm />
         </div>
       </main>
-
+        <BackToTop />
       <Footer />
     </div>
   )

@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import Header from "@/components/site/Header"
 import Footer from "@/components/site/Footer"
 import ContactForm from "@/components/site/ContactForm"
+import BackToTop from "@/components/site/BackToTop"
 
 export default function Home() {
   return (
@@ -40,17 +41,20 @@ export default function Home() {
                 get in touch.
               </p>
               <div className="flex flex-wrap gap-3">
-                <Button asChild>
-                  <Link href="#book">About the book</Link>
-                </Button>
-                <Button
-                  variant="outline"
-                  asChild
-                  className="bg-white/90 text-black hover:bg-white"
-                >
-                  <Link href="#about">About the author</Link>
-                </Button>
-              </div>
+  {/* Primary hero button – deep red (match GR) */}
+  <Button asChild className="bg-[#7f1d1d] hover:bg-[#991b1b] cursor-pointer">
+    <Link href="#book">About the book</Link>
+  </Button>
+
+  {/* Secondary hero button – white with burgundy hover text (match GR) */}
+  <Button
+    variant="outline"
+    asChild
+    className="bg-white/90 text-black hover:bg-white hover:text-[#7f1d1d] cursor-pointer"
+  >
+    <Link href="#about">About the author</Link>
+  </Button>
+</div>
             </div>
           </div>
         </section>
@@ -189,7 +193,7 @@ export default function Home() {
           <ContactForm />
         </div>
       </main>
-
+        <BackToTop />
       <Footer />
     </div>
   )

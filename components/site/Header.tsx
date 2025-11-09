@@ -13,9 +13,10 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-[#3b2b2a] bg-[#151012] text-zinc-50 shadow-md">
-      <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-3">
-        {/* Brand / name */}
-        <div className="flex items-baseline gap-2">
+      {/* FULL WIDTH ROW */}
+      <div className="flex w-full items-center justify-between gap-4 px-6 py-3">
+        {/* LEFT: Brand / name */}
+        <div className="flex shrink-0 items-baseline gap-2">
           <Link
             href={isEnglish ? "/en" : "/"}
             className="text-lg sm:text-xl font-semibold tracking-tight"
@@ -27,8 +28,8 @@ export default function Header() {
           </span>
         </div>
 
-        {/* Desktop nav + language toggle */}
-        <div className="hidden items-center gap-4 text-xs sm:flex sm:text-sm">
+        {/* RIGHT (desktop): nav + language toggle */}
+        <div className="hidden md:flex min-w-0 items-center justify-end gap-4 text-xs sm:text-sm whitespace-nowrap">
           <nav className="flex items-center gap-4">
             <a
               href="#book"
@@ -81,10 +82,10 @@ export default function Header() {
           </div>
         </div>
 
-        {/* Mobile hamburger */}
+        {/* RIGHT (mobile): hamburger */}
         <button
           type="button"
-          className="flex items-center justify-center rounded-md p-1 md:hidden"
+          className="md:hidden inline-flex items-center justify-center rounded-md p-1"
           onClick={() => setMenuOpen((prev) => !prev)}
           aria-label="Toggle navigation"
         >
@@ -92,10 +93,10 @@ export default function Header() {
         </button>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile menu (full width as well) */}
       {menuOpen && (
         <div className="md:hidden border-t border-[#3b2b2a] bg-[#151012]">
-          <div className="mx-auto flex max-w-5xl flex-col gap-3 px-6 py-4 text-sm">
+          <div className="flex w-full flex-col gap-3 px-6 py-4 text-sm">
             <nav className="flex flex-col gap-2">
               <a
                 href="#book"
